@@ -9,7 +9,7 @@ function toggleMenu() {
   var isOpen = navLinks.classList.toggle('open');
   menuToggle.setAttribute('aria-expanded', String(isOpen));
   menuToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
-  menuToggle.textContent = isOpen ? 'Close' : 'Menu';
+  menuToggle.textContent = isOpen ? '\u2715' : '\u2630';
 }
 
 // Close the menu after a link is clicked
