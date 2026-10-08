@@ -150,13 +150,16 @@ a:focus-visible, button:focus-visible {
 /* Hamburger (hidden on desktop) */
 .menu-toggle {
   display: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
   font: inherit;
-  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1;
   color: var(--cream);
   background: transparent;
   border: 2px solid var(--cream);
-  border-radius: 999px;
-  padding: 0.25rem 1rem;
+  border-radius: 50%;
   cursor: pointer;
 }
 
@@ -303,7 +306,10 @@ a:focus-visible, button:focus-visible {
 
 /* Mobile */
 @media (max-width: 767px) {
-  .menu-toggle { display: inline-block; }
+  .menu-toggle { display: grid; place-items: center; }
+
+  /* Name stays on the left, hamburger on the right */
+  .brand { flex: 1; min-width: 0; font-size: 0.95rem; }
 
   /* Hidden until menu opens */
   .nav-links {
