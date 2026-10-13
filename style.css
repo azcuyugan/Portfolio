@@ -168,7 +168,7 @@ a:focus-visible, button:focus-visible {
 /* Hero */
 .hero {
   margin: 0.75rem;
-  padding: 2.5rem 1.5rem 3rem;
+  padding: 1rem 1.5rem 3rem;
   text-align: center;
 }
 
@@ -328,7 +328,7 @@ a:focus-visible, button:focus-visible {
 @media (min-width: 768px) {
   .site-header { padding: 1.5rem 1.5rem 0; }
   .navbar { border-radius: 999px; }
-  .hero { margin: 1.5rem; padding-top: 3.5rem; }
+  .hero { margin: 0.5rem 1.5rem 1.5rem; padding-top: 1rem; }
   .hero h1 { font-size: 3rem; }
   .photo-wrap { width: 24rem; height: 24rem; }
 
