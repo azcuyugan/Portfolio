@@ -42,5 +42,14 @@ for (var i = 0; i < links.length; i++) {
   links[i].addEventListener('click', closeMenu);
 }
 
+var aboutLinks = document.querySelectorAll('a[href="#about"]');
+for (var j = 0; j < aboutLinks.length; j++) {
+  aboutLinks[j].addEventListener('click', function (event) {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    history.replaceState(null, '', '#about');
+  });
+}
+
 // Start in light mode
 applyTheme('light');
