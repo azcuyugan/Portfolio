@@ -46,7 +46,7 @@ var aboutLinks = document.querySelectorAll('a[href="#about"]');
 for (var j = 0; j < aboutLinks.length; j++) {
   aboutLinks[j].addEventListener('click', function (event) {
     event.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo(0, 0);
     history.replaceState(null, '', '#about');
   });
 }
